@@ -1,0 +1,88 @@
+.intro-section {
+  background-color: rgb(46, 245, 46);
+  min-height: 100vh;
+}
+
+.intro-heading {
+  position: absolute;
+  top: 25%;
+  left: 15%;
+  /* margin: -25px 0 0 -25px; */
+  background-color: white;
+}
+
+.intro-subheading {
+  position: absolute;
+  bottom: 25%;
+  left: 15%;
+  max-width: 55%;
+}
+
+.intro-subheading h2 {
+  font-size: 3rem;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.intro-subheading p {
+  position: relative;
+  animation-name: animate-up;
+  animation-duration: 0.5s;
+}
+
+h1 {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 10rem;
+  margin-top: -9.5rem;
+}
+
+.el-cray {
+  color: darkred;
+  animation-name: shiny-text;
+  animation-duration: 3s;
+  transition: all ease-in-out 0.3s;
+}
+
+.el-cray:hover {
+  color:darkslateblue;
+  font-size: 11rem;
+  border: 2px dotted black;
+}
+
+.welcome {
+  position: relative;
+  animation-name: move-right;
+  animation-duration: 1s;
+}
+
+@keyframes shiny-text {
+  from { color: darkred;}
+  to { color: rgb(110, 245, 245);}
+  from { color: rgb(110, 245, 245); }
+  to { color: darkred; }
+}
+
+@keyframes move-right {
+  0% { 
+    left: -100px;
+  }
+  25% { 
+    left: 100px; 
+    color: chocolate; 
+  }
+  50% { 
+    left: 200px; 
+    color: chocolate; 
+  }
+  75% { 
+    left: -100px; 
+    color: chocolate; 
+  }
+  100% { 
+    left: 0px 
+  }
+}
+
+@keyframes animate-up {
+  from { bottom: -50px }
+  to { bottom: 0px }
+}
